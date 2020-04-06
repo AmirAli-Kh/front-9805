@@ -1,0 +1,477 @@
+:root{
+    --header: rgba(48, 60, 71, 0.8);
+    --main: #4bcaff;
+    --video-color: #515f67;
+    --footer: #353f47;
+    --font-family: 'Calibri';
+}
+
+/* -------------------Start Global--------------------- */
+body , html{
+    height: 100%;
+    margin: 0;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+a{
+    text-decoration: none;
+}
+.clearfix{
+    clear: both;
+    float: none;
+}
+.container{
+        width: 70%;
+        display: inline-block;
+        margin-left: 15%;
+}
+header, .camera , footer{ 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* ---------------------End Global--------------------- */
+
+/* -------------------Start Header---------------------------- */
+
+header{
+    background-image: url(../images/header.png);
+    min-height: 100%;
+    position: relative;
+}
+header .base-menu{
+    position: absolute;
+    top: 0;
+    background-color: var(--header);
+    width: 100%;
+}
+header .base-menu .logo{
+    float: left;
+    margin: 35px 0;
+    font-weight: 700;
+}
+header .base-menu .logo h3{
+    color: white;
+    font-size: 25px;
+}
+header .base-menu .logo h3 span{
+    font-size: 25px;
+    color: var(--main);
+}
+header .base-menu ul.menu{
+    float: right;
+    margin: 40px 0;
+}
+header .base-menu ul.menu li{
+    display: inline-block;
+    margin-left: 28px;
+    box-sizing: border-box;
+    
+} 
+header .base-menu ul.menu li a{
+    color: white;
+    transition: all ease-in-out 0.4s;
+} 
+header .base-menu ul.menu li.active a ,header .base-menu ul.menu li a:hover{
+    color: var(--main);
+    border: 1px solid var(--main);
+    padding: 5px;
+   
+} 
+header .caption{
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 60%;
+    margin-left: 20%;
+}
+header h1{
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+    background-color: var(--header);
+    margin-bottom: 15px;
+}
+header h1#first {
+    margin-left: 170px;
+    margin-right: 170px;
+}
+header h1#second{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+/* -------------------End Header---------------------------- */
+
+/* -------------------Start Services---------------------------- */
+.services{
+    background-color: var(--main);
+    padding: 30px 0;
+}
+.services h4{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 30px;
+    
+}
+.services h4 span{
+    border-bottom: 2px solid white;
+}
+.services ul{
+    display: block;
+}
+.services ul li{
+    display: inline-block;
+    color: white;
+    width: 24%;
+    text-align: justify;
+    padding-right: 25px;
+    box-sizing: border-box;
+    margin-right: 7px;
+}
+.services ul li i{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.services ul li h6{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.services ul li p{
+    font-size: 14px;
+}
+/* -------------------End Services---------------------------- */
+
+
+/* -------------------Start Images---------------------------- */
+.image{
+    background-color: white;
+    padding: 35px 0;
+    height: 610px;
+}
+.image h4{
+    font-size: 30px;
+    color: var(--video-color);
+    float: left;
+}
+.image h4 span{
+    border-bottom: 2px solid var(--video-color);
+}
+.image ul{
+    float: right;
+}
+.image ul li{
+    display: inline-block;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+.image ul li a{
+    color: var(--video-color);
+    transition: all ease-in-out 0.4s;
+}
+.image ul li.active a , .image ul li a:hover{
+    color: var(--main);
+    border: 1px solid var(--main);
+    padding: 4px;
+}
+.picture{
+    margin-top: 50px;
+    position: relative;
+}
+.image .picture .show , .image .picture .hidden{
+    position: absolute;
+    display: inline-block;
+}
+.image .show img , .image .hidden img{
+    width: 23%;
+    margin: 0 15px 15px 0;
+}
+.image .hidden img{
+    opacity: 0;
+}
+.image .hidden img:hover{
+    opacity: 1;
+}
+/* -----------------------End Images-------------------------- */
+
+/* -----------------------Start Video--------------------------- */
+.video{
+    background-color: var(--video-color);
+    padding: 35px 0;
+    height: 300px;
+    position: relative;
+}
+.video .left-side{
+    width: 45%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.video .left-side h4{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 45px;
+    letter-spacing: 2px;
+}
+.video .left-side h4 span{
+    border-bottom: 2px solid white;
+}
+.video .left-side p{ 
+    font-size: 15px;
+    color: white;
+    margin-bottom: 35px;
+}
+.video .left-side a{
+    color: var(--footer);
+    border: 2px solid var(--footer);
+    padding: 10px;
+}
+.video .right-side{
+    width: 35%;
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute;
+    right: 100px;
+}
+.video video{
+    width: 80%;
+    margin-top: 60px;
+}
+/* -----------------------End Video--------------------------- */
+
+/* -----------------------Start Twitter--------------------------- */
+.twitter{
+    background-color: var(--main);
+    padding: 40px 0;
+}
+.twitter .top{
+    margin-bottom: 30px;
+}
+.twitter .top h4{
+    font-size: 30px;
+    color: white;
+    float: left;
+}
+.twitter .top h4 span{
+    border-bottom: 2px solid white;
+}
+.twitter .top i{
+    font-size: 30px;
+    color: white;
+    float: right;
+}
+.twitter p{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.twitter p a{
+    color: white;
+    font-size: 22px;
+}
+/* -----------------------End Twitter--------------------------- */
+
+/* -----------------------Start Camera--------------------------- */
+.camera{
+    background-image: url(../images/camera.png);
+    min-height: 100%;
+    position: relative;
+}
+.camera h4{
+    margin-top: 200px;
+    font-size: 30px;
+    color: white;
+    width: 100%;
+}
+.camera h4 span{
+    border-bottom: 2px solid white;
+}
+.camera .lf-sd {
+    width: 45%;
+    display: inline-block;
+    margin-top: 60px;
+    margin-right: 65px;
+}
+.camera .lf-sd p {
+    color: white;
+    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: justify;
+}
+.camera .rg-sd{   
+    position: absolute; 
+    width: 30%;
+    display: inline-block;
+    margin-top: 60px;
+}
+.camera .rg-sd p{
+    color: white;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: justify;
+}
+.camera .rg-sd i{
+    color: white;
+    font-size: 25px;
+    border: 2px solid white;
+    padding: 10px;
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 30px;
+}
+/* -----------------------End Camera--------------------------- */
+
+/* -----------------------Start Txt--------------------------- */
+.txt{
+    background-color: white;
+    padding: 40px 0;
+}
+.txt .tx-h{
+    margin-bottom: 40px;
+    position: relative;
+}
+.txt .tx-h h4{
+    float: left;
+    color: var(--footer);
+    font-size: 30px;
+}
+.txt .tx-h h4 span{
+    border-bottom: 2px solid var(--footer);
+}
+.txt .tx-h h2{
+    float: right;
+    color: var(--footer);
+    font-size: 60px;
+    font-weight: 900;
+    position: absolute;
+    top: -40px;
+    right: 0;
+}
+.txt p{
+    color: var(--footer);
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 35px;
+    width: 90%;
+}
+.txt i{
+    color: var(--main);
+    font-size: 15px;
+    font-weight: 600;
+}
+/* -----------------------End Txt--------------------------- */
+
+/* -----------------------Start Footer--------------------------- */
+footer{
+    background-image: url(../images/footer.png);
+    min-height: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+footer h4{
+    color: white;
+    font-size: 30px;
+    padding: 40px 0;
+}
+footer h4 span{
+    border-bottom: 2px solid white;
+}
+footer .ft-l{
+    width: 48%;
+    float: left;
+    box-sizing: border-box;
+}
+footer .ft-l i , footer .message i{
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5px;
+}
+footer .ft-l input{
+    background-color: transparent;
+    border: 1px solid white;
+    width: 400px;
+    height: 40px;
+    margin-bottom: 30px;
+    font-size: 17px;
+    color: white;
+    padding-left: 5px;
+}
+footer .ft-r{
+    width: 48%;
+    float: right;
+    box-sizing: border-box;
+    margin-top: 15px;
+}
+footer .ft-r p{
+    color: white;
+    font-size: 15px;
+    margin-bottom: 35px;
+    line-height: 25px;
+}
+footer .ft-r i{
+    color: white;
+    font-size: 17px;
+    display: block;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+}
+footer .message{
+    margin-bottom: 70px;
+}
+footer .message input{
+    width: 100%;
+    height: 250px;
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 20px;
+    color: white;
+    padding-left: 5px;
+}
+footer .message button{
+    color: white;
+    background-color: var(--main);
+    width: 300px;
+    height: 40px;
+    border: none;
+    margin: 30px 0;
+    font-weight: 700;
+    font-size: 16px;
+}
+footer .ft-menu{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--footer);
+    padding: 30px 0;
+}
+footer .ft-menu ul{
+    display: inline-block;
+}
+footer .ft-menu ul li{
+    display: inline-block
+}
+footer .ft-menu ul li a{
+    color: var(--video-color);
+    float: left;
+    margin-right: 10px;
+    transition: all ease-in-out 0.4s;
+}
+footer .ft-menu ul li a:hover{
+    color: var(--main);
+}
+footer .ft-menu ul li a::after{
+    content: "|";
+    color: var(--video-color);
+    margin-left: 10px;
+}
+footer .ft-menu ul li:last-child a::after{
+    content: " ";
+}
+footer .ft-menu i{
+    float: right;
+    display: inline-block;
+    font-weight: 900;
+    color: var(--video-color);
+}
+/* -----------------------End Footer--------------------------- */
